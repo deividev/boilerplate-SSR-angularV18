@@ -9,4 +9,6 @@ import { MainContainerComponent } from '../components';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent {}
+export class AppComponent {
+  title = 'Angular18-boilerplate';
+}
