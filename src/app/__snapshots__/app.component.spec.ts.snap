@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppComponent should match the snapshot 1`] = `
+<div
+  id="root2"
+>
+  <router-outlet />
+  
+  <select>
+    <option
+      value="lara-light-blue"
+    >
+      Lara Light Blue
+    </option>
+    <option
+      value="lara-dark-blue"
+    >
+      Lara Dark Blue
+    </option>
+  </select>
+  <div
+    class="card flex flex-column md:justify-content-between row-gap-3"
+  >
+    <p-button
+      class="p-element"
+      label="Button 1"
+    >
+      <button
+        class="p-ripple p-element p-button p-component"
+        data-pc-name="button"
+        data-pc-section="root"
+        pautofocus=""
+        pripple=""
+        type="button"
+      >
+        
+        
+        
+        
+        
+        
+        <span
+          class="p-button-label"
+          data-pc-section="label"
+        >
+          Button 1
+        </span>
+        
+        
+      </button>
+    </p-button>
+    <p-button
+      class="p-element"
+      label="Button 2"
+      styleclass="p-button-secondary"
+    >
+      <button
+        class="p-ripple p-element p-button p-component p-button-secondary"
+        data-pc-name="button"
+        data-pc-section="root"
+        pautofocus=""
+        pripple=""
+        type="button"
+      >
+        
+        
+        
+        
+        
+        
+        <span
+          class="p-button-label"
+          data-pc-section="label"
+        >
+          Button 2
+        </span>
+        
+        
+      </button>
+    </p-button>
+    <p-button
+      class="p-element"
+      label="Button 3"
+      styleclass="p-button-help"
+    >
+      <button
+        class="p-ripple p-element p-button p-component p-button-help"
+        data-pc-name="button"
+        data-pc-section="root"
+        pautofocus=""
+        pripple=""
+        type="button"
+      >
+        
+        
+        
+        
+        
+        
+        <span
+          class="p-button-label"
+          data-pc-section="label"
+        >
+          Button 3
+        </span>
+        
+        
+      </button>
+    </p-button>
+  </div>
+  <app-main-container>
+    <div>
+      
+    </div>
+  </app-main-container>
+</div>
+`;

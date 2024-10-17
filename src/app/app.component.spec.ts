@@ -4,6 +4,7 @@ import {
   provideHttpClient,
   withInterceptorsFromDi,
 } from '@angular/common/http';
+import { render } from '@testing-library/angular';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -23,5 +24,10 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app.title).toEqual('Angular18-boilerplate');
+  });
+
+  it('should match the snapshot', async () => {
+    const { container } = await render(AppComponent);
+    expect(container).toMatchSnapshot();
   });
 });

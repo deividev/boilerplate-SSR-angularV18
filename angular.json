@@ -31,7 +31,19 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              {
+                "input": "src/lara-dark-blue.scss",
+                "bundleName": "lara-dark-blue",
+                "inject": false
+              },
+              {
+                "input": "src/lara-light-blue.scss",
+                "bundleName": "lara-light-blue",
+                "inject": false
+              }
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -82,6 +94,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
+            "config": "jest.config.js",
             "polyfills": [],
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
@@ -89,10 +102,27 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "./",
+                "output": "/"
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              {
+                "input": "src/lara-dark-blue.scss",
+                "bundleName": "lara-dark-blue",
+                "inject": false
+              },
+              {
+                "input": "src/lara-light-blue.scss",
+                "bundleName": "lara-light-blue",
+                "inject": false
+              }
             ],
             "scripts": []
           }
