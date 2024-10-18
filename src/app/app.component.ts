@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MainContainerComponent } from '../components';
-import { ThemeService } from '../services/theme.service';
 import { ButtonModule } from 'primeng/button';
 
 @Component({
@@ -13,6 +12,4 @@ import { ButtonModule } from 'primeng/button';
 })
 export class AppComponent {
   title = 'Angular18-boilerplate';
-
-  constructor(private themeService: ThemeService) {}
 }
