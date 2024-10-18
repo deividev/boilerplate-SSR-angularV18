@@ -15,9 +15,4 @@ export class AppComponent {
   title = 'Angular18-boilerplate';
 
   constructor(private themeService: ThemeService) {}
-
-  changeTheme(event: Event): void {
-    const theme = (event.target as HTMLSelectElement).value;
-    this.themeService.setTheme(theme);
-  }
 }
